@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희망담보 대출 가이드라인</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            min-height: 100vh;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+        
+        section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            background-color: #34495e;
+            color: white;
+            padding: 10px 15px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .info-item {
+            background-color: #ecf0f1;
+            padding: 12px;
+            border-left: 4px solid #3498db;
+            border-radius: 3px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 12px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .info-value {
+            color: #27ae60;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        .info-value.alert {
+            color: #e74c3c;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        
+        table thead {
+            background-color: #34495e;
+            color: white;
+        }
+        
+        table th {
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid #bdc3c7;
+        }
+        
+        table td {
+            padding: 9px 8px;
+            border: 1px solid #ecf0f1;
+        }
+        
+        table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        
+        table tbody tr:hover {
+            background-color: #f0f8ff;
+        }
+        
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px 12px;
+            margin: 10px 0;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #856404;
+        }
+        
+        .required {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e8f4f8;
+            color: #2980b9;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            h2 {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+            
+            table th, table td {
+                padding: 8px 6px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 18px;
+            }
+            
+            h2 {
+                font-size: 13px;
+            }
+            
+            .info-item {
+                padding: 10px;
+            }
+            
+            .info-label {
+                font-size: 11px;
+            }
+            
+            .info-value {
+                font-size: 12px;
+            }
+            
+            table {
+                font-size: 11px;
+            }
+            
+            table th, table td {
+                padding: 6px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>희망담보</h1>
+            <p class="subtitle">대출 상품 가이드라인 (최종 업데이트)</p>
+        </header>
+        
+        <!-- 1. 기본 상품 정보 -->
+        <section>
+            <h2>📋 기본 상품 정보</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">상품명</span>
+                    <span class="info-value">희망담보</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">대출기간</span>
+                    <span class="info-value">2년</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">대출대상</span>
+                    <span class="info-value">아파트 및 주상복합아파트</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">취급 가능 지역</span>
+                    <span class="info-value">서울, 경기도, 인천</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">신용점수</span>
+                    <span class="info-value">커트라인 없음<span class="tag">단, 연체자 불가</span></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">소득 심사</span>
+                    <span class="info-value">본인/배우자/기타 소득 중요</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">상환방식</span>
+                    <span class="info-value">만기일시상환</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">중도상환수수료</span>
+                    <span class="info-value">3%</span>
+                </div>
+            </div>
+            
+            <h3 style="font-size: 13px; color: #2c3e50; margin: 12px 0 8px; font-weight: 600;">금리</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">대출금리</span>
+                    <span class="info-value">10.9% (예외) / 11.9 ~ 13.9%</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">연체금리</span>
+                    <span class="info-value alert">대출금리 + 3.0%</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 2. 시세 적용 기준 -->
+        <section>
+            <h2>📍 시세 적용 기준</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">구분</th>
+                        <th>적용 기준</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>하한가</strong></td>
+                        <td>1~2층</td>
+                    </tr>
+                    <tr>
+                        <td><strong>일반가</strong></td>
+                        <td>그 외층</td>
+                    </tr>
+                    <tr>
+                        <td><strong>시세 출처</strong></td>
+                        <td>KB시세 우선 적용, 부동산테크 적용</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- 3. LTV 및 금리 -->
+        <section>
+            <h2>💰 LTV 및 금리</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">구분</th>
+                        <th style="width: 35%;">LTV 범위</th>
+                        <th>층별 적용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>선순위</strong></td>
+                        <td>80%</td>
+                        <td>전체</td>
+                    </tr>
+                    <tr>
+                        <td><strong>후순위</strong></td>
+                        <td>80%</td>
+                        <td>전체</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- 4. 사업자 자격 조건 -->
+        <section>
+            <h2>👤 사업자 자격 조건</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40%;">조건</th>
+                        <th>필수여부</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>즉발사업자 가능</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>폐업이 아닌 개업상태</strong></td>
+                        <td><span class="required">필수</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- 5. 인정 부동산 조건 -->
+        <section>
+            <h2>🏠 인정 부동산 조건</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>조건</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>소유권이전 3개월 이후 부동산</td>
+                    </tr>
+                    <tr>
+                        <td>준공후 45년 미만 및 시세 3억 초과 부동산</td>
+                    </tr>
+                    <tr>
+                        <td>총 세대수 100세대 이상 부동산</td>
+                    </tr>
+                    <tr>
+                        <td>후순위 취급시 선순위 채권자: <strong>금융기관에 한함</strong></td>
+                    </tr>
+                    <tr>
+                        <td>물상보증인(배우자 및 직계존비속) 가능</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">
+                ※ 금융기관: 금융소비자 보호에 관한 법률 제2조 제6호 기준 내지 마땅 적용
+            </div>
+        </section>
+        
+        <!-- 6. 취급 불가 -->
+        <section>
+            <h2>❌ 취급 불가</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>취급 불가 사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>부동산업/매매업, 사치향락 등 불건전업종 (도박, 매춘, 유흥업소 등)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>연체 및 채무불이행 등의 고객</strong></td>
+                    </tr>
+                    <tr>
+                        <td>차주 및 담보채권자의 법인 또는 외국인 경우</td>
+                    </tr>
+                    <tr>
+                        <td>소유권에 대한 권리침해의 소지가 있는 경우</td>
+                    </tr>
+                    <tr>
+                        <td>세대 전입이 없는 경우</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">
+                ※ 소득 없어도 가능하나, 심사시 부결될 수 있습니다.
+            </div>
+        </section>
+    </div>
+</body>
+</html>
