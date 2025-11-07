@@ -134,24 +134,24 @@
         }
         
         .tab-content.iamguide h2 {
-            background-color: #34495e; /* 아이엠 섹션 제목 색상 (기존 아이엠 가이드 스타일) */
+            background-color: #34495e; 
             color: white;
         }
 
         .tab-content.meritz h2 {
-            background-color: #27ae60; /* 메리츠 탭 제목 색상 */
+            background-color: #27ae60; 
         }
         
         .meritz h1 {
-            color: #003d82; /* 메리츠 탭 내부 h1 색상 */
+            color: #003d82; 
         }
         
         .meritz .subtitle {
-            color: #666; /* 메리츠 탭 내부 subtitle 색상 */
+            color: #666; 
         }
         
         .meritz h4 {
-            color: #003d82; /* 메리츠 탭 내부 info-card 제목 색상 */
+            color: #003d82; 
         }
         
         .meritz .info-card {
@@ -301,22 +301,6 @@
             font-weight: bold;
         }
         
-        .required {
-            color: #e74c3c;
-            font-weight: 600;
-        }
-
-        .tag {
-            display: inline-block;
-            background-color: #e8f4f8;
-            color: #2980b9;
-            padding: 3px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            margin-right: 5px;
-        }
-        
         .meritz .code-block {
             background-color: #f0f0f0;
             padding: 10px;
@@ -326,12 +310,6 @@
             overflow-x: auto;
             margin-top: 8px;
             margin-bottom: 8px;
-        }
-        .meritz .grid-2 .info-card {
-             border-left: 3px solid #003d82;
-        }
-        .meritz .grid-2 h4 {
-            color: #003d82;
         }
     </style>
 </head>
@@ -614,30 +592,25 @@
                 </div>
             </div>
 
-            <!-- 섹션 2: LTV 기준 -->
+            <!-- 섹션 2: LTV 기준 (간소화된 최종 표 적용) -->
             <div class="section">
                 <div class="section-title">2. 지역별 LTV 기준 (APT 한정 / 최대 LTV 80% 적용)</div>
                 <table style="table-layout: fixed;">
                     <thead>
                         <tr>
                             <th colspan="2" rowspan="2">구분</th>
-                            <th colspan="4">1군 지역</th>
-                            <th colspan="4">2군 지역</th>
-                            <th colspan="4">3군 지역</th>
+                            <th colspan="2">1군 지역</th>
+                            <th colspan="2">2군 지역</th>
+                            <th colspan="2">3군 지역</th>
+                            <th rowspan="2">135㎡ 초과 (공통)</th>
                         </tr>
                         <tr>
-                            <th>62.8㎡ 이하</th>
-                            <th>62.8㎡ 초과 ~ 95.9㎡ 이하</th>
+                            <th>95.9㎡ 이하</th>
                             <th>95.9㎡ 초과 ~ 135㎡ 이하</th>
-                            <th>135㎡ 초과</th>
-                            <th>62.8㎡ 이하</th>
-                            <th>62.8㎡ 초과 ~ 95.9㎡ 이하</th>
+                            <th>95.9㎡ 이하</th>
                             <th>95.9㎡ 초과 ~ 135㎡ 이하</th>
-                            <th>135㎡ 초과</th>
-                            <th>62.8㎡ 이하</th>
-                            <th>62.8㎡ 초과 ~ 95.9㎡ 이하</th>
+                            <th>95.9㎡ 이하</th>
                             <th>95.9㎡ 초과 ~ 135㎡ 이하</th>
-                            <th>135㎡ 초과</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -645,32 +618,22 @@
                             <td class="label-col" rowspan="2" style="text-align: center;">APT</td>
                             <td class="label-col">선순위</td>
                             <td class="highlight-blue">**80.0%**</td>
-                            <td class="highlight-blue">**80.0%**</td>
-                            <td class="highlight-yellow">**75.0%**</td>
-                            <td>60.0%</td>
                             <td class="highlight-yellow">**75.0%**</td>
                             <td class="highlight-yellow">**75.0%**</td>
-                            <td>70.0%</td>
-                            <td>55.0%</td>
                             <td>70.0%</td>
                             <td>70.0%</td>
                             <td>65.0%</td>
-                            <td>50.0%</td>
+                            <td>60.0% (선순위)</td>
                         </tr>
                         <tr>
                             <td class="label-col">후순위</td>
                             <td class="highlight-blue">**80.0%**</td>
                             <td class="highlight-blue">**80.0%**</td>
                             <td class="highlight-blue">**80.0%**</td>
-                            <td>70.0%</td>
-                            <td class="highlight-blue">**80.0%**</td>
-                            <td class="highlight-blue">**80.0%**</td>
                             <td>75.0%</td>
-                            <td>65.0%</td>
-                            <td class="highlight-yellow">**75.0%**</td>
-                            <td class="highlight-yellow">**75.0%**</td>
+                            <td>75.0%</td>
                             <td>70.0%</td>
-                            <td>60.0%</td>
+                            <td>70.0% (후순위)</td>
                         </tr>
                     </tbody>
                 </table>
